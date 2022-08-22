@@ -2,12 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
+/**
+ * 正方形のマス目コンポーネント
+ */
 class Square extends React.Component {
   render() {
     return <button className="square">{/* TODO */}</button>;
   }
 }
 
+/**
+ * 盤面コンポーネント
+ */
 class Board extends React.Component {
   renderSquare(i) {
     return <Square />;
@@ -39,6 +45,9 @@ class Board extends React.Component {
   }
 }
 
+/**
+ * Gameコンポーネント
+ */
 class Game extends React.Component {
   render() {
     return (
